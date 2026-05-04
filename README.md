@@ -1,13 +1,13 @@
 # 🏥 Fetal Health Classification
 
-Prédiction de la santé fœtale à partir de données CTG (Cardiotocographie).
+Prédiction de la santé fœtale à partir de données CTG.
 
 ## 📊 Dataset
 - 2126 patients
 - 21 features médicales
 - 3 classes : Normal, Suspect, Pathologique
 
-## 🤖 Modèles testés
+## 🤖 Résultats
 | Modèle | Accuracy |
 |--------|----------|
 | Gradient Boosting | 97.24% 🏆 |
@@ -19,24 +19,9 @@ Prédiction de la santé fœtale à partir de données CTG (Cardiotocographie).
 | KNN | 90.06% |
 
 ## 🚀 Lancement
-
-```bash
-# Installer les dépendances
 pip install -r requirements.txt
-
-# Entraîner le modèle
 python main.py
-
-# Lancer le dashboard
 streamlit run app.py
 
-# Lancer l'API
-uvicorn api:app --reload
-```
-
 ## 🛠️ Technologies
-- Python 3.11
-- Scikit-learn
-- XGBoost / LightGBM
-- FastAPI
-- Streamlit
+Python 3.11 | Scikit-learn | XGBoost | LightGBM | FastAPI | Streamlit
